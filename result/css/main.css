@@ -1,0 +1,30 @@
+/* CSS Document */
+*{margin:0;padding:0px; font-family:Arial,微软雅黑; -webkit-tap-highlight-color:rgba(255,0,0,0); color:#5d6265;-webkit-text-size-adjust:none;}
+img{border:none;padding:0;margin:0;}
+ul,ol,li{list-style:none;margin:0;padding:0;}
+a{text-decoration:none }
+a:hover{text-decoration:none}
+input{vertical-align: middle;line-height: normal;  -webkit-tap-highlight-color:rgba(255,0,0,0); }
+.fl{float:left;}
+.fr{float:right;} 
+.cb{clear: both;}  
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.dn{display:none;}
+.center dt,.title span{color:#01afce;}
+
+.title{text-align:center; height:24px; line-height:24px; border-top:#f1f1f1 1px solid; width:80%; margin:20px auto 0 auto; font-size:20px;}
+.title span{ display:inline-block; height:24px; line-height:24px; background-color:#fff; position:relative; top:-12px; padding:0 5px;}
+.center dt{ line-height:20px; font-size:16px;}
+.center dl{background-color:#fafafa; margin-bottom:10px; padding:15px 20px;}
+.center dd{ line-height:20px; margin-top:5px; font-size:14px; color:#5d6265;}
+.center dd .main{line-height:20px; padding:0 140px 0 10px;}
+.center .main span{float:left; background-color:#999; color:#fff; display:block; height:14px; width:14px; line-height:14px; text-align:center; margin:3px 3px; border-radius:2px;}
+.center .main p{padding-left:20px;}
+.center dd h5{float:right; line-height:20px;}
+.center dd i{display:block; float:left; height:14px; width:100px; margin:3px 5px; background-color:#dadada;}
+.center dd em{display:block; float:left; height:14px; background-color:#5d6265;}
+.center dd .sm em{display:block; float:left; height:14px; background-color:#ff9306;}
+.center dd .big em{display:block; float:left; height:14px; background-color:#00dbbf;}
+.center dd h5 span{display:block; float:right; width:30px; overflow:hidden; color:#5d6265;}
+.center dd h5.sm span{display:block; float:right; width:30px; overflow:hidden; color:#ff9306;}
+.center dd h5.big span{display:block; float:right; width:30px; overflow:hidden; color:#00dbbf;}
