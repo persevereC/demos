@@ -4,9 +4,9 @@
 	<title>demo</title>
 </head>
 <body>
-    <video id="video" width="420" height="280" autoplay></video>
+    <video id="video" width="320" height="240" autoplay></video>
     <button id='snap'>take a photo</button>
-    <canvas id='canv' width="420" height="280"></canvas>
+    <canvas id='canv' width="320" height="240"></canvas>
     <script>
     	var obj={
     		video:document.getElementById('video'),
@@ -14,8 +14,8 @@
     		btn:document.getElementById('snap'),
 		style:'rgba(0，0，0,0.5)',
     		text:'我们的时光',
-    		width:420,
-    		height:280,
+    		width:320,
+    		height:240,
     		draw:function(){
     			var self=this;
     			var context=self.canvas.getContext('2d');
