@@ -12,6 +12,8 @@
     		video:document.getElementById('video'),
     		canvas:document.getElementById('canv'),
     		btn:document.getElementById('snap'),
+		font:'14px microsoft yahei',
+		style:'rgba(255,255,255,0.5)',
     		text:'hello see me',
     		width:320,
     		height:240,
@@ -19,12 +21,13 @@
     			var self=this;
     			var context=self.canvas.getContext('2d');
     			context.drawImage(self.video,0,0,self.width,self.height);
+			context.fillStyle=self.style;
     			context.fillText(self.text,self.width-140,self.height-10);
     		},
     		bind:function(){
     			var self=this;
     			self.btn.addEventListener('click',function(){
-    				self.draw;
+    				self.draw();
     			});
     		},
     		init:function(){
