@@ -3,9 +3,20 @@
     <head>
         <meta http-equiv="Content-type" content="text/html" charset="utf-8">
         <title>Test_demos</title>
-        <link href="css/text.css" rel="stylesheet">
+		<style>
+		    html,body{font-size:20px;}
+			body, dl, dd, h1, h2, h3, h4, h5, h6, p, form{margin:0;}  
+            ol,ul,li{margin:0; padding:0;}
+			.list{display:-webkit-flex;display:flex;flex-direction:column;padding:1rem 8rem;}
+		    .item{font-size:3rem;border-bottom:1px solid #000;margin-top:1rem;}
+			a{text-decoration:none;color:#666;}
+		</style>
     </head>
     <body>
-		<a href='./result/result.html'>投票test</a>
-    </body>
+	    <ol class='list'>
+		    <li class='item'><a href='./result/result.html'>投票test</a></li>
+			<li class='item'><a href='./result/result.html'>投票test</a></li>
+			<li class='item'><a href='./result/result.html'>投票test</a></li>
+		</ol>
+	</body>
 </html>
