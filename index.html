@@ -1,22 +1,42 @@
-﻿<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-type" content="text/html" charset="utf-8">
-        <title>Test_demos</title>
-		<style>
-		    html,body{font-size:20px;}
-			body, dl, dd, h1, h2, h3, h4, h5, h6, p, form{margin:0;}  
-            ol,ul,li{margin:0; padding:0;}
-			.list{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;padding:1rem 8rem;}
-		    .item{font-size:3rem;border-bottom:1px solid #000;margin-top:1rem;}
-			a{text-decoration:none;color:#666;}
-		</style>
-    </head>
-    <body>
-	    <ol class='list'>
-		    <li class='item'><a href='./result/result.html'>投票test</a></li>
-			<li class='item'><a href='./result/result.html'>投票test</a></li>
-			<li class='item'><a href='./result/result.html'>投票test</a></li>
-		</ol>
-	</body>
+<head>
+	<title>demo</title>
+</head>
+<body>
+    <video id="video" width="320" height="240" autoplay></video>
+    <button id='snap'>take a photo</button>
+    <canvas id='canv' width="320" height="240"></canvas>
+    <script>
+    	var obj={
+    		video:document.getElementById('video'),
+    		canvas:document.getElementById('canv'),
+    		btn:document.getElementById('snap'),
+    		text:'hello see me',
+    		width:320,
+    		height:240,
+    		draw:function(){
+    			var self=this;
+    			var context=self.canvas.getContext('2d');
+    			context.drawImage(self.video,0,0,self.width,self.height);
+    			context.fillText(self.text,self.width-140,self.height-10);
+    		},
+    		bind:function(){
+    			var self=this;
+    			self.btn.addEventListener('click',function(){
+    				self.draw;
+    			});
+    		},
+    		init:function(){
+    			var video=this.video;
+    			navigator.mediaDevices.getUserMedia({video:true}).then(function(stream){
+    				video.src=window.URL.createObjectURL(stream);
+    				video.play();
+    			});
+    			this.bind();
+    		}
+    	};
+        obj.init();
+    </script>
+</body>
 </html>
